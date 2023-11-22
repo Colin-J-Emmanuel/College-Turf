@@ -14,13 +14,31 @@
 </head>
 
 <body>
+  <!-- Modal -->
+  <div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <!-- text here -->
+        <p id="thanks-modal-content">Thank you for signing up to the newsletter!</p>
+        <!-- button here (stretch feature) -->
+      </div>
+      <!-- image here-->
+      <img src="Images/Confetti.png" alt="Thanks Image" id="thanks-modal-image">
+    </div>
+
+  </div>
+  
   <!-- Part 1: Navbar Starter Code -->
-  <div class="navbar">
+  <div class="navbar revealable">
     <ul>
       <li><a href="#">Founders</a></li>
       <li><a href="#About">About</a></li>
       <li><a href="#">Contacts</a></li>
       <li><a href="#image-body">Soccer Fans</a></li>
+      <li><button id="theme-button">Toggle Dark Mode</button></li>
+
       <!-- Stretch Challenge: Drop Down -->
     </ul>
   </div>
@@ -35,7 +53,7 @@
     <div class="item"></div>
   </div>
   <!-- Header -->
-  <div class="header-container">
+  <div class="header-container revealable">
     <header>
       <h1 id="College Turf">College Turf</h1>
   
@@ -43,6 +61,7 @@
         <button type="button">Home</button>
         <button type="button">Find a Program</button>
         <button type="button">Blog</button>
+        <button type="button" id="red-mot"> Reduce Motion</button>
       </div>
     
       <div id="header-img">
@@ -76,6 +95,47 @@
     <img src="Images/Soccer Fans.png" width=150px alt="Body image"/>
   </div>
 
+  <!-- Petition Section -->
+  <!-- The Beginning -->
+  <div class="petition active" id="petition">
+
+      <h2>Support Our NYC College Soccer Community Website 📢</h2>
+      <div class="petition-container">
+
+
+        <div class="petition-para">
+          <!-- info goes here -->
+          <p>We, the passionate soccer-loving college students of New York City, invite you to join us in supporting our initiative to create a dynamic online platform that connects fellow soccer enthusiasts, celebrates our shared love for the beautiful game, and fosters a sense of unity among NYC's diverse college community.</p>
+          
+        </div>
+
+        <div class="signatures">
+          <p id ="counter"> "🖊️3 people have signed this petition and support this cause." </p>
+          <p>🖊️ Colin from Manhattan supports this.</p>
+          <p>🖊️ Christian from Bronx supports this.</p>
+          <p>🖊️ Sakina from Queens supports this.</p>
+        </div>
+
+      </div>
+
+    <!--- Sign Petition Form --->
+    <form id="sign-petition" title="sign-petition">
+      <!-- inputs go here -->
+      <label for="Name">Name:</label>
+      <input type="text" id="Name">
+      <label for="Hometown">Hometown:</label>"
+      <input type="text" id="Hometown">"
+      <label for="Email">Email:</label>"
+      <input for="Email" id=Email>"
+    </form>
+
+     <!--- Sign Now Button --->
+    <button id="sign-now-button">Sign Now</button>
+
+  </div>
+
+  <!-- The End -->
+  
   <a class="Resources" href="https://betterplayer.leagueapps.com/leagues/soccer/3063889-2022-spring-betterplayer-4-practice-pack--choose-location--program">
     <article>
       <h3>Soccer schedules in NYC</h3>
@@ -90,7 +150,8 @@
     </article>
   </a>
 
-  <div class="footer-container">
+  
+  <div class="footer-container active">
     <a href ="College_Turf.html">
       <h4>Contact us</h4>
     </a>
